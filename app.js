@@ -20,7 +20,7 @@ function wypiszHaslo() {
 
 window.onload = start;
 
-var litery = new Array(35);
+var litery = new Array(35); //tablica
 
 litery[0] = "A";
 litery[1] = "Ą";
@@ -111,11 +111,11 @@ function sprawdz(nr) {
 
   //wygrana
   if (haslo == haslo1)
-    document.getElementById('alfabet').innerHTML = 'Tak jest! Podana prawidłowe haslo: ' + haslo + '<br /><br /><span class="reset" onclick="location.reload()">JESZCZE RAZ?';
+    document.getElementById('alfabet').innerHTML = '<span class="wygrana">Wygrana!</span> Podane prawidłowe haslo: ' + haslo + '<br /><br /><span class="reset" onclick="location.reload()">JESZCZE RAZ?';
 
   //przegrana
   if (ileSkuch >= 9)
-  document.getElementById('alfabet').innerHTML = 'Przegrana!  Prawidłowe haslo: ' + haslo + '<br /><br /><span class="reset" onclick="location.reload()">JESZCZE RAZ?';
+  document.getElementById('alfabet').innerHTML = '<span class="przegrana">Przegrana!</span>  Prawidłowe haslo: ' + haslo + '<br /><br /><span class="reset" onclick="location.reload()">JESZCZE RAZ?';
 
 
 }
